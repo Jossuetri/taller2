@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        .news{
+            border: solid thin black;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 50%;" class="news">
+        <center><b>Rellena tu CV</b></center>
+        <dl>
+            <dt>nombre</dt>
+            <dt><input type="text" name="nombre"></dt>
+            <dt>apellido</dt>
+            <dt><input type="text" name="apellido"></dt>
+            <dt>contraseña</dt>
+            <dt><input type="password" name="contra"></dt>
+            <dt>confirme su contraseña</dt>
+            <dt><input type="password" name="contra2"></dt>
+            <dt>nacionalidad</dt>
+            <dt><select name="nacionalidad" id="cd">
+                <option value="">v</option>
+                <option value="">E</option>
+                <option value="">otro</option>
+            </select><input type="number" name="identidad"></dt>
+            <dt>sexo</dt>
+            <dt><input type="radio" name="gender" value="male">masculino</dt>
+            <dt><input type="radio" name="gender" value="female">femenino</dt>
+            <dt>foto</dt>
+            <dt><input type="file" name="foto"></dt>
+            <dt><input type="checkbox">estudiante</dt>
+        </dl>
+
+        <dl style="width: 80%;" class="news">
+            <dt>departamento</dt>
+            <dt><select name="departamento" id="departamento">
+                <option>Departamento de marketing</option>
+                <option>Departamento comercial</option>
+                <option>Departamento administrativo</option>
+                <option>Recursos humanos</option>
+                <option>Departamento de finanzas</option>
+            </select></dt>
+
+            <dt>fecha de nacimiento</dt>
+            <dt><input type="number" style="width: 20%;">de <select name="meses" id="mes">
+                <option value="text">Enero</option>
+                <option value="text">Febrero</option>
+                <option value="text">Marzo</option>
+                <option value="text">Abril</option>
+                <option value="text">Mayo</option>
+                <option value="text">Junio</option>
+                <option value="text">Julio</option>
+                <option value="text">Agosto</option>
+                <option value="text">Septiembre</option>
+                <option value="text">Octunre</option>
+                <option value="text">Noviembre</option>
+                <option value="text">Diciembre</option>
+            </select>del <input type="number" style="width: 20%;"></dt>
+
+            <dt>temas de interes</dt>
+            <dt><select name="temas">
+                <option>base de datos</option>               
+                <option>arquitectura</option>               
+                <option>calidad</option>
+                <option>ERP,CRM,Business Intenlligence</option>
+                </select></dt>
+        </dl>
+
+        <dl>
+            <button id="guardar">guardar</button>
+            <button id="reload" onclick="location.reload();">borrar</button>
+            <input type="button" value="Página anterior" onClick="history.go(-1);">
+        </dl>
+
+    </div>
+</body>
+</html>
